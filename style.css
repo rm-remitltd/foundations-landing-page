@@ -83,6 +83,7 @@ a{
 
 button{
     color: white;
+    border: 0;
     background-color: #3882F6;
     border-color: #3882F6;
     border-radius: 5px;
@@ -101,8 +102,9 @@ button{
 .card-container{
     display: flex;
     gap: 48px;
-    align-content: space-evenly;
+    align-items: center;
     padding: 64px;
+    flex: 1;
 }
 
 .card{
