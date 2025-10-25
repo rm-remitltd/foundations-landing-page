@@ -4,7 +4,8 @@ body{
 }
 
 .hero, 
-.header{
+.header,
+.footer{
     background-color: #1F2937;
 }
 
@@ -25,13 +26,19 @@ body{
 
 .hero .image{
     background-color: lightgrey;
+    flex: 1;
+}
+
+.hero .content{
+    flex: 1;
 }
 
 ul{
     list-style: none;
     display: flex;
     gap: 32px;
-    align-items: stretch;
+    align-content:space-evenly;
+    flex: 1;
 }
 
 a{
@@ -47,14 +54,17 @@ a{
     align-items: center;
 }
 
-.header-logo{
+.header-logo,
+.cta-heading {
     font-size: 24px;
-    color:#F9FAF8
+    color:#F9FAF8;
+    flex: 1;
 }
 
 .header-links{
     display: flex;
-    align-content: space-evenly;
+    align-content: right;
+    flex: 1;
 }
 
 .quote{
@@ -76,11 +86,12 @@ button{
     background-color: #3882F6;
     border-color: #3882F6;
     border-radius: 5px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
     padding-top: 8px;
     padding-bottom: 8px;
     box-shadow: none;
+    font-weight: 900;
 }
 
 .cards{
@@ -89,7 +100,7 @@ button{
 
 .card-container{
     display: flex;
-    gap: 32px;
+    gap: 48px;
     align-content: space-evenly;
     padding: 64px;
 }
@@ -99,6 +110,8 @@ button{
     flex-direction: column;
     align-items: center;
     width: 200px;
+    max-width: 200px;
+    flex: 1;
 }
 
 .information-heading{
@@ -118,4 +131,30 @@ button{
 .card-caption{
     text-align: center;
     padding: 8px;
+}
+
+.cta{
+    display: flex;
+    flex: 1;
+    background-color:#3882F6;
+    border-radius: 8px;
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-top: 128px;
+    margin-bottom: 128px;
+    padding: 64px;
+}
+/* 
+.cta-heading{
+
+} */
+
+.cta button{
+    border-color: white;
+}
+
+.footer{
+    padding: 48px;
+    text-align: center;
+    color: #E5E7EB;
 }
